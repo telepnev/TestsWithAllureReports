@@ -1,0 +1,9 @@
+/.gradle/
+/.idea/
+/build/
+/gradle/
+/src/main/java/credentials
+/debug.log
+/gradlew
+/gradlew.bat
+/settings.gradle
