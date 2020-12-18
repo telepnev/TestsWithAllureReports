@@ -2,13 +2,14 @@ package github.creatIssue;
 
 import BaseTest.BaseSteps;
 import credentials.Properties;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Feature("Issues")
 public class GitHubApiAndWeb {
-
     private final BaseSteps webSteps = new BaseSteps();
     private final ApiSteps apiSteps = new ApiSteps();
     Properties cred = new Properties();
@@ -20,6 +21,7 @@ public class GitHubApiAndWeb {
     @DisplayName("Hello from API !!!")
     @Story("Пользователь создает Issue через API и проверяет ее создание в WEB")
     @Owner("Telepnev")
+
     public void creatIssueByApi() {
 
        final Issue created = apiSteps.creatIssue(TITLE_ISSUE);

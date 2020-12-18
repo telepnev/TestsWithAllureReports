@@ -3,7 +3,6 @@ package github.creatIssue;
 import credentials.Properties;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 public class ApiSteps {
 
